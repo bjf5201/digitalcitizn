@@ -51,6 +51,9 @@ const BlogIndex = ({
                   <small>{post.date}</small>
                 </header>
                 <section itemProp="description">{parse(post.excerpt)}</section>
+                <Link to={post.uri} itemProp="url">
+                  <span aria-label="read-more">Read full post</span>
+                </Link>
               </article>
             </li>
           )
