@@ -12,9 +12,12 @@ const NotFoundPage = ({ data, location }) => {
       <Seo title="404: Not Found" />
       <h1>404: Not Found</h1>
       <p>You just hit a route that doesn&#39;t exist...bummer.</p>
-      <p>To help you out, I've included a handy dandy link back to our main site below.</p>
+      <p>
+        To help you out, I've included a handy dandy link back to our main site
+        below.
+      </p>
       <Link to="/">
-        <span role="link">Click here to go back to home page.</span>
+        <span role="link">Click here to go back to {title}</span>
       </Link>
     </Layout>
   )

@@ -14,7 +14,7 @@ const Bio = () => {
       # if there was more than one user, this would need to be filtered
       author: wpUser {
         firstName
-        twitter: name
+        instagram: name
         description
         avatar {
           url
@@ -36,14 +36,17 @@ const Bio = () => {
       )}
       {author?.firstName && (
         <section>
-          <p>Hi. I'm <strong>{author.firstName}</strong>.</p>
+          <p>
+            Hi. I'm <strong>{author.firstName}</strong>.
+          </p>
           {` `}
           <p>{author?.description || null}</p>
           {` `}
-          <p>{author?.twitter && (
-            <a href={`https://twitter.com/${author?.twitter || ``}`}>
-              I'm on Twitter
-            </a>
+          <p>
+            {author?.instagram && (
+              <a href={`https://twitter.com/${author?.instagram || ``}`}>
+                I'm on Instagram
+              </a>
             )}
           </p>
         </section>

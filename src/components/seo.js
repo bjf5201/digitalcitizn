@@ -23,7 +23,7 @@ const Seo = ({ description, lang, meta, title }) => {
 
         # if there's more than one user this would need to be filtered to the main user
         wpUser {
-          twitter: name
+          instagram: name
         }
       }
     `
@@ -57,19 +57,19 @@ const Seo = ({ description, lang, meta, title }) => {
           content: `website`,
         },
         {
-          name: `twitter:card`,
+          name: `instagram:card`,
           content: `summary`,
         },
         {
-          name: `twitter:creator`,
-          content: wpUser?.twitter || ``,
+          name: `instagram:creator`,
+          content: wpUser?.instagram || ``,
         },
         {
-          name: `twitter:title`,
+          name: `instagram:title`,
           content: title,
         },
         {
-          name: `twitter:description`,
+          name: `instagram:description`,
           content: metaDescription,
         },
       ].concat(meta)}
