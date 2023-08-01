@@ -17,7 +17,7 @@ const NotFoundPage = ({ data, location }) => {
         below.
       </p>
       <Link to="/">
-        <span role="link">Click here to go back to {title}</span>
+        <span role="link">Click here to go back to the home page.</span>
       </Link>
     </Layout>
   )
