@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 export default function Logo() {
   return (
-    <StaticImage src="/..images/logo.png"
+    <StaticImage src="../images/logo.png"
     alt="Digital Citizn Logo"
     placeholder="blurred"
     layout="fixed"
