@@ -52,7 +52,24 @@ module.exports = {
      * if you're curious about it.
      */
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `dominantColor`,
+          quality: 80,
+          breakpoints: [500, 750, 1080, 1366, 1920],
+          backgroundColor: `transparent`,
+          tracedSVGOptions: {},
+          blurredOptions: {},
+          jpgOptions: {},
+          pngOptions: {},
+          webpOptions: {},
+          avifOptions: {},
+        }
+      }
+    },
     `gatsby-plugin-image`,
     {
       // See https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/?=gatsby-plugin-manifest
@@ -77,5 +94,27 @@ module.exports = {
      */
     // `gatsby-plugin-offline`,
     `gatsby-plugin-gatsby-cloud`,
-  ],
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        enableListener: true,
+        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+        web: [
+          {
+            name: `Rock Salt`,
+            file: `https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap`,
+
+          },
+          {
+            name: `Lato`,
+            file: `https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap`,
+          },
+          {
+            name: `Libre Baskerville`,
+            file: `https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap`,
+          },
+        ],
+      },
+    },
+  ]
 }

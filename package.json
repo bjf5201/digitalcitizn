@@ -1,21 +1,25 @@
 {
-  "name": "gatsby-starter-wordpress-blog",
+  "name": "digitalcitizn",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "A blog for the intentional use of digital products",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com> and Tyler Barnes <tylerdbarnes@gmail.com>",
+  "author": "Bethany <hello@digitalcitizn.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/bjf5201/digitalcitizn/issues"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/bjf5201/digitalcitizn/#readme",
   "keywords": [
-    "gatsby"
+    "digital",
+    "citizn",
+    "humane technology",
+    "digital wellness",
+    "digital wellbeing"
   ],
   "license": "0BSD",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/bjf5201/digitalcitizn"
   },
   "scripts": {
     "build": "gatsby build",
@@ -28,6 +32,7 @@
   },
   "dependencies": {
     "gatsby": "~5.3.2",
+    "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-gatsby-cloud": "^5.11.0",
     "gatsby-plugin-image": "^3.3.2",
     "gatsby-plugin-manifest": "^5.3.1",
