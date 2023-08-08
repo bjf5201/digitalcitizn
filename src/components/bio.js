@@ -43,11 +43,7 @@ const Bio = () => {
           <p>{author?.description || null}</p>
           {` `}
           <p>
-            {author?.instagram && (
-              <a href={`https://twitter.com/${author?.instagram || ``}`}>
-                I'm on Instagram
-              </a>
-            )}
+            <a href="https://www.instagram.com/digitalcitizn/" target="_blank">I'm on Instagram</a>
           </p>
         </section>
       )}
