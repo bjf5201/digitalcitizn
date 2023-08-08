@@ -29,7 +29,7 @@ const Seo = ({ description, lang, meta, title }) => {
     `
   )
 
-  const metaDescription = `At Digital Citizn, we strive to promote digital wellbeing by encouraging unity, intention, and empathy. Get efficient tips and resources for becoming better digital citizens. Follow our blog for the latest tips & news on humane technology and digital ethics!`/*description || wp.generalSettings?.description*/
+  const metaDescription = description || wp.generalSettings?.description
   const defaultTitle = wp.generalSettings?.title
 
   return (
@@ -42,7 +42,7 @@ const Seo = ({ description, lang, meta, title }) => {
       meta={[
         {
           name: `description`,
-          content: `At Digital Citizn, we strive to promote digital wellbeing by encouraging unity, intention, and empathy. Get efficient tips and resources for becoming better digital citizens. Follow our blog for the latest tips & news on humane technology and digital ethics!` ,
+          content: metaDescription ,
         },
         {
           property: `og:title`,
