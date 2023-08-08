@@ -29,7 +29,7 @@ const Seo = ({ description, lang, meta, title }) => {
     `
   )
 
-  const metaDescription = description || wp.generalSettings?.description
+  const metaDescription = `At Digital Citizn, we strive to promote digital wellbeing by encouraging unity, intention, and empathy. Get efficient tips and resources for becoming better digital citizens. Follow our blog for the latest tips & news on humane technology and digital ethics!`/*description || wp.generalSettings?.description*/
   const defaultTitle = wp.generalSettings?.title
 
   return (
@@ -42,7 +42,7 @@ const Seo = ({ description, lang, meta, title }) => {
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: `At Digital Citizn, we strive to promote digital wellbeing by encouraging unity, intention, and empathy. Get efficient tips and resources for becoming better digital citizens. Follow our blog for the latest tips & news on humane technology and digital ethics!` ,
         },
         {
           property: `og:title`,
@@ -57,19 +57,19 @@ const Seo = ({ description, lang, meta, title }) => {
           content: `website`,
         },
         {
-          name: `instagram:card`,
+          name: `twitter:card`,
           content: `summary`,
         },
         {
-          name: `instagram:creator`,
-          content: wpUser?.instagram || ``,
+          name: `twitter:creator`,
+          content: wpUser?.twitter || ``,
         },
         {
-          name: `instagram:title`,
+          name: `twitter:title`,
           content: title,
         },
         {
-          name: `instagram:description`,
+          name: `twitter:description`,
           content: metaDescription,
         },
       ].concat(meta)}
